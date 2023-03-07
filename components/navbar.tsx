@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <>
@@ -15,12 +17,12 @@ export default function Navbar() {
             </div>
             <div className="ml-4 sm:ml-6 sm:flex sm:space-x-8">
               {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
-              <a
+              <Link
                 href="/leaderboard"
                 className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900"
               >
                 Leaderboard
-              </a>
+              </Link>
             </div>
           </div>
         </div>
