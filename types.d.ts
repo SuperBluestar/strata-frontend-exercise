@@ -16,3 +16,5 @@ type ProfileData = {
   email: string;
   birthday: string;
 };
+
+type User = UserDetails & Partial<ProfileData>
